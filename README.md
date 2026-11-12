@@ -4,18 +4,18 @@ A ROS 2 and Gazebo Sim project that uses Nav2 to navigate a differential-drive F
 
 [Technical report](Trenti_hw4.pdf)
 
-## What we built
+## Implementation
 
-- Configured a Gazebo course, robot spawn pose, and named waypoint sequences for navigation and mapping.
-- Used Nav2 Simple Commander to send waypoints and SLAM Toolbox to build an occupancy map.
-- Compared SLAM and costmap settings for map completion and traversal time.
-- Integrated a simulated camera and ArUco detection to publish the pose of marker 115 in the map frame.
+- The simulation was configured with a Gazebo course, a robot spawn pose, and named waypoint sequences for navigation and mapping.
+- The navigation pipeline uses Nav2 Simple Commander to send waypoints and SLAM Toolbox to build an occupancy map.
+- The evaluation compared SLAM and costmap settings for map completion and traversal time.
+- A simulated camera was integrated with ArUco detection to publish the pose of marker 115 in the map frame.
 
 ## Run the demos
 
 Use ROS 2 Humble with Gazebo Sim, the ROS–Gazebo bridge, Nav2, SLAM Toolbox, and RViz 2. Install `rqt_image_view` to inspect the marker detector output. The ArUco ROS packages are included in this repository.
 
-From the `src` directory of your ROS 2 workspace, clone the repository.
+Clone the repository from the `src` directory of the ROS 2 workspace.
 
 ```bash
 git clone https://github.com/FedericoTr26/Differential-drive-nav2-slam-aruco.git
@@ -57,7 +57,7 @@ ros2 run rl_fra2mo_description follow_waypoints.py
 ros2 run rl_fra2mo_description follow_waypoints.py --ros-args -p target:="map"
 ```
 
-For the mapping view, open RViz in another terminal. After completing the mapping mission, run the map saver from the directory where you want to write the map.
+For the mapping view, open RViz in another terminal. After completing the mapping mission, run the map saver from the chosen output directory.
 
 ```bash
 ros2 launch rl_fra2mo_description display_fra2mo.launch.py map:=true
