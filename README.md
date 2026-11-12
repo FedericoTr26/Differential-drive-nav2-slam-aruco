@@ -2,7 +2,7 @@
 
 A ROS 2 and Gazebo Sim project that uses Nav2 to navigate a differential-drive FRA2MO robot, map its environment, and detect an ArUco marker during an approach-and-return mission.
 
-[Technical report](Trenti_hw4.pdf)
+[Technical report](differential-drive-nav2-slam-aruco.pdf)
 
 ## Implementation
 
