@@ -1,4 +1,4 @@
-# FRA2MO Navigation, SLAM and ArUco Detection
+# Differential-Drive Robot Navigation with Nav2, SLAM and ArUco
 
 A ROS 2 and Gazebo Sim project that uses Nav2 to navigate a differential-drive FRA2MO robot, map its environment, and detect an ArUco marker during an approach-and-return mission.
 
@@ -18,7 +18,7 @@ Use ROS 2 Humble with Gazebo Sim, the ROS–Gazebo bridge, Nav2, SLAM Toolbox, a
 From the `src` directory of your ROS 2 workspace, clone the repository.
 
 ```bash
-git clone https://github.com/FedericoTr26/RL_Homework-4.git
+git clone https://github.com/FedericoTr26/Differential-drive-nav2-slam-aruco.git
 ```
 
 Return to the workspace root to build and source the workspace.
